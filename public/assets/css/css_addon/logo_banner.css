@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:600,800");
+* {
+  box-sizing: border-box; }
+
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  transform: translateZ(0); }
+
+[id='logo2'] {
+  position: relative;
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  z-index: 2; }
+  [id='logo2'] [id='polygon2'] {
+    transform-origin: 50%; }
+  [id='logo2'] [id='circle2'] {
+    transform-origin: 80% 80%; }
+
+
+/* Logo de bannière navigateur */

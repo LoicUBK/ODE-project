@@ -1,0 +1,112 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+  ODE77
+{% endblock %}
+
+{% block body %}
+  <div class="is-preload landing">
+    <div
+      id="page-wrapper">
+
+      <!-- Banner -->
+      <section id="banner" style="background-image:url(images/pic03.jpg); background-size:cover; background-repeat:no-reapeat; background-attachment: fixed;">
+
+        <div class="content">
+          <header>
+
+            <div class="site-logo">
+              <figure id="logo">
+                <svg height="100%" viewbox="0 0 148 128" width="100%">
+                  <defs>
+                    <mask id="circle-mask">
+                      <rect fill="white" height="100%" width="100%"></rect>
+                      <circle cx="120" cy="96" fill="black" id="logo-mask" r="28"></circle>
+                    </mask>
+                  </defs>
+                  <polygon fill="#0071ff" id="logo-hexagon" mask="url(#circle-mask)" points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"></polygon>
+                  <circle cx="120" cy="96" fill="#f8a000" id="logo-circle" r="20"></circle>
+                </svg>
+              </figure>
+              <div class="site-title">
+                <div class="site-title-text" id="logo-text">
+                  O<span>.</span>D<span>.</span>E
+                </div>
+              </div>
+            </div>
+            <div class="site-title-text">
+              <p>Orientation
+                <span>/</span>
+                Développement
+                <span>/</span>
+                Emploi</p>
+            </div>
+          </div>
+        </header>
+      </div>
+      <a class="goto-next scrolly" href="#one">Suivant</a>
+    </section>
+
+    <!-- Première partie -->
+    <section class="spotlight style1 bottom" id="one">
+      <span class="image fit main"><img alt="" src="https://picsum.photos/id/1048/5616/3744"/></span>
+      <div class="content" style="background-image:url(images/pic03.jpg); background-size:cover; background-repeat:no-reapeat; background-attachment: fixed;">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-12-medium">
+              <header>
+                <h2>Présentation</h2>
+                <p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+              </header>
+            </div>
+            <div class="col-4 col-12-medium">
+              <p>Colonne 1</p>
+
+            </div>
+            <div class="col-4 col-12-medium">
+              <p>Colonne 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="goto-next scrolly" href="#two">Suivant</a>
+    </section>
+
+    <!-- Deuxième partie -->
+    <section class="spotlight style3 left" id="three">
+      <span class="image fit main bottom"><img alt="" src="https://picsum.photos/id/1067/5760/3840"/></span>
+      <div class="content" style="background-image:url(images/pic03.jpg); background-size:cover; background-repeat:no-reapeat; background-attachment: fixed;">
+        <header>
+          <h2>Demandeurs d'emploi</h2>
+          <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+        </header>
+        <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+        <ul class="actions">
+          <li>
+            <a class="button" href="#">Lire plus</a>
+          </li>
+        </ul>
+      </div>
+      <a class="goto-next scrolly" href="#three">Suivant</a>
+    </section>
+
+    <!-- Troisième partie -->
+    <section class="spotlight style2 right" id="two">
+      <span class="image fit main"><img alt="" src="https://picsum.photos/id/1/5616/3744"/></span>
+      <div class="content" style="background-image:url(images/pic03.jpg); background-size:cover; background-repeat:no-reapeat; background-attachment: fixed;">
+        <header>
+          <h2>Client</h2>
+          <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+        </header>
+        <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+        <ul class="actions">
+          <li>
+            <a class="button" href="#">Lire plus...</a>
+          </li>
+        </ul>
+      </div>
+      <a class="goto-next scrolly" href="#four">Suivant</a>
+    </section>
+
+  </div>
+{% endblock %}

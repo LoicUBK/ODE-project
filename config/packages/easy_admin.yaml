@@ -1,0 +1,45 @@
+easy_admin:
+
+    site_name : 'ODE77'
+
+    user:
+        display_name: true
+        display_avatar: true
+        name_property_path: 'fullName'
+        avatar_property_path: 'gravatar'
+
+    entities:
+#        # List the entity class name you want to manage
+#        - App\Entity\Product
+#        - App\Entity\Category
+        - App\Entity\User
+        - App\Entity\DemandeurEmploi
+        - App\Entity\Entreprise
+        - App\Entity\Contact
+
+    design:
+        menu :
+                - {label: 'Utilisateurs'}
+                - User
+                - DemandeurEmploi
+                - Entreprise
+                # - Partenaire
+                - {label: 'Contact'}
+                - Contact
+        assets:
+            css:
+                - 'main.css'
+                - 'logo_banner.css'
+                - 'bundles/easyadmin/bootstrap-all.css'
+            js:
+                - 'logo.js'
+                - 'logo_banner.js'
+                - 'jquery.min.js'
+                - 'jquery.scrolly.min.js'
+                - 'jquery.dropotron.min.js'
+                - 'jquery.scrollex.min.js'
+                - 'browser.min.js'
+                - 'breakpoints.min.js'
+                - 'util.js'
+                - 'main.js'
+                - 'bundles/easyadmin/bootstrap-all.js'

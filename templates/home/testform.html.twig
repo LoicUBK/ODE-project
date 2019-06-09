@@ -1,0 +1,37 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+  ODE77
+{% endblock %}
+
+{% block body %}
+
+  <article id="contact">
+    <h2 class="major">Nous contacter</h2>
+    <form action="#" method="post">
+      <div class="fields">
+        <div class="field half">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text"/>
+        </div>
+        <div class="field half">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text"/>
+        </div>
+        <div class="field half">
+          <label for="email">N° de téléphone</label>
+          <input id="email" name="email" type="text"/>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+      </div>
+      <ul class="actions">
+        <li><input class="btn succes" type="submit" value="Envoyer"/></li>
+        {# <li><input type="reset" value="Reset" /></li> #}
+      </ul>
+    </form>
+  </article>
+
+{% endblock %}

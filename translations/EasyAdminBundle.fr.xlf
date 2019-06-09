@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="47Pt8HL" resname="action.remove_item">
+        <source>action.remove_item</source>
+        <target>__action.remove_item</target>
+      </trans-unit>
+      <trans-unit id="vMRdZZB" resname="label.nullable_field">
+        <source>label.nullable_field</source>
+        <target>__label.nullable_field</target>
+      </trans-unit>
+      <trans-unit id="cKnorcr" resname="action.choose_file">
+        <source>action.choose_file</source>
+        <target>__action.choose_file</target>
+      </trans-unit>
+      <trans-unit id="5nxOeVi" resname="form.tab.error_badge_title">
+        <source>form.tab.error_badge_title</source>
+        <target>__form.tab.error_badge_title</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

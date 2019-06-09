@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <title>
+      {% block title %}
+        ODE77
+      {% endblock %}
+    </title>
+    {% block stylesheets %}
+      <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+      <link href="assets/css/main.css" rel="stylesheet"/>
+      <link href="assets/css/css_addon/logoscss.css" rel="stylesheet"/>
+      <link href="assets/css/css_addon/logo_banner.css" rel="stylesheet"/>
+      <noscript><link href="assets/css/noscript.css" rel="stylesheet"/></noscript>
+    {% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+
+  </head>
+
+
+  <header
+    id="header">
+    {# <h1 id="logo">
+                      <a class="btn btn-outline-warning" href="{{path('accueil')}}">Accueil</a>
+                    </h1> #}
+    <div class="site-logo">
+
+      <a class="btn btn-outline-warning" href="{{path('accueil')}}">
+
+        <figure id="logo2">
+          <svg height="100%" viewbox="0 0 148 128" width="100%">
+            <defs>
+              <mask id="circle-mask2">
+                <rect fill="white" height="100%" width="100%"></rect>
+                <circle cx="120" cy="96" fill="black" id="logo-mask2" r="28"></circle>
+              </mask>
+            </defs>
+            <polygon class="logo-hexagon2" fill="#0071ff" id="polygon2" mask="url(#circle-mask)" points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"></polygon>
+            <circle class="logo-circle2" cx="120" cy="96" fill="#f8a000" id="circle2" r="20"></circle>
+          </svg>
+        </figure>
+        Accueil</a>
+
+    </div>
+
+    <nav id="nav">
+      <ul>
+        <li>
+          {# <form class="form-inline my-2 my-lg-0">
+                                        <input aria-label="Search" class="form-control mr-sm-1" placeholder="Que recherchez-vous ?" type="search">
+                                        <button class="btn btn-outline-info" type="button">Rechercher</button>
+                                      </form> #}
+        </li>
+        <li>
+          <a href="#">Entreprises</a>
+          <ul>
+            <li>
+              <a href="#">Option 1</a>
+            </li>
+            {# <li><a href="#">Option 2</a></li>
+                                                  <li><a href="#">Option 3</a></li>
+                                                  <li><a href="#">Option 4</a></li> #}
+          </ul>
+        </li>
+        <li>
+          <a href="#">Collectivités</a>
+          <ul>
+            <li>
+              <a href="#">Option 1</a>
+            </li>
+            {# <li><a href="#">Option 2</a></li>
+                                                  <li><a href="#">Option 3</a></li>
+                                                  <li><a href="#">Option 4</a></li> #}
+          </ul>
+        </li>
+        <li>
+          <a href="#">Demandeurs d'emplois</a>
+          <ul>
+            <li>
+              <a href="#">Option 1</a>
+            </li>
+            {# <li><a href="#">Option 2</a></li>
+                                                  <li><a href="#">Option 3</a></li>
+                                                  <li><a href="#">Option 4</a></li> #}
+          </ul>
+        </li>
+        <li>
+          <a href="{{path('formulaire')}}">Nous contacter</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">Nos Actions</a>
+          <ul>
+            <li>
+              <a class="nav-link" href="{{path('accompagnement')}}">Action & Accompagnement</a>
+            </li>
+            <li>
+              <a href="{{path('aci')}}">Ateliers & Chantiers d'Insertion</a>
+            </li>
+            <li>
+              <a href="{{path('ai')}}">Association Intermédiaire</a>
+            </li>
+            <li>
+              <a href="{{path('formation')}}">Organisme de Formation</a>
+            </li>
+            <li>
+              <a href="{{path('partenaires')}}">Nos Partenaires</a>
+            </li>
+            <li>
+              <a href="#">Sous-menu</a>
+              <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+                <li><a href="#">Option 4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn btn-info" href="#">S'enregistrer</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+
+    {% block body %}{% endblock %}
+
+    <footer id="footer">
+      <ul class="icons">
+        <li>
+          <a class="icon fa-twitter" href="#">
+            <span class="label">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon fa-facebook" href="https://www.facebook.com/Orientationdeveloppementemploi77/">
+            <span class="label">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon fa-linkedin" href="#">
+            <span class="label">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon fa-envelope" href="#">
+            <span class="label">Email</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy;
+          <a href="rgpd.html">Mentions légales</a>
+          Tous droits réservés</li>
+        <li>Design: Loïc</li>
+      </ul>
+    </footer>
+
+  </body>
+
+  {% block javascripts %}
+    <script src="assets/js/logo.js"></script>
+    <script src="assets/js/logo_banner.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  {% endblock %}
+</html>
