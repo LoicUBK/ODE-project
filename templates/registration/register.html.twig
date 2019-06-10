@@ -8,13 +8,13 @@
 </br>
 
 </br>
-    <h1>Register</h1>
+    <h1>Enregistrement sur le site</h1>
 
     {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword) }}
+        {{ form_row(registrationForm.email, 'attr': {'placeholder' : "Votre email"}) }}
+        {{ form_row(registrationForm.plainPassword, 'attr': {'placeholder' : "Votre mot de passe"}) }}
         {{ form_row(registrationForm.termsAccepted) }}
 
-        <button class="btn-succes">Register</button>
+        <button class="btn-succes">S'enregister</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
