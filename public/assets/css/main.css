@@ -2175,6 +2175,10 @@ body.landing #header {
   box-shadow: none;
   position: absolute; }
 
+.dja-inscrit {
+  text-size-adjust: 10%;
+}
+
 /* Banner */
 #banner {
   background-attachment: fixed;

@@ -2,6 +2,7 @@ security:
   encoders:
     App\Entity\User:
       algorithm: bcrypt
+      cost: 12
 
   # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
   providers:
@@ -17,8 +18,8 @@ security:
     main:
       anonymous: ~
       guard:
-          authenticators:
-              - App\Security\LoginFormAuthenticator
+        authenticators:
+          - App\Security\LoginFormAuthenticator
 
     # activate different ways to authenticate
     # http_basic: true
@@ -28,11 +29,13 @@ security:
 
   role_hierarchy:
     ROLE_ADMIN: ROLE_USER
+    ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
     #ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
   # Easy way to control access for large sections of your site
   # Note: Only the *first* access control that matches will be used
   access_control:
     - { path: ^/login$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/admin/users, roles: ROLE_SUPER_ADMIN }
     - { path: ^/admin, roles: ROLE_ADMIN }
     - { path: ^/profile, roles: ROLE_USER }
