@@ -1410,19 +1410,19 @@ input[type="radio"] + label:before {
   border-radius: 100%; }
 
 ::-webkit-input-placeholder {
-  color: rgba(3, 3, 3, 0.5) !important;
+  color: #ffffff !important;
   opacity: 1.0; }
 
 :-moz-placeholder {
-  color: rgba(3, 3, 3, 0.5) !important;
+  color: #ffffff !important;
   opacity: 1.0; }
 
 ::-moz-placeholder {
-  color: rgba(3, 3, 3, 0.5) !important;
+  color: #ffffff !important;
   opacity: 1.0; }
 
 :-ms-input-placeholder {
-  color: rgba(3, 3, 3, 0.5) !important;
+  color: #ffffff !important;
   opacity: 1.0; }
 
 /* Box */

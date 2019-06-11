@@ -16,20 +16,15 @@
       <noscript><link href="assets/css/noscript.css" rel="stylesheet"/></noscript>
     {% endblock %}
 
+    <script src="http://www.abcompteur.com/cpt/?code=4/6/19182/7/1&ID=43497128233" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
   </head>
 
 
-  <header
-    id="header">
-    {# <h1 id="logo">
-                                  <a class="btn btn-outline-warning" href="{{path('accueil')}}">Accueil</a>
-                                </h1> #}
+  <header id="header">
     <div class="site-logo">
-
       <a class="btn btn-outline-warning" href="{{path('accueil')}}">
-
         <figure id="logo2">
           <svg height="100%" viewbox="0 0 148 128" width="100%">
             <defs>
@@ -43,48 +38,31 @@
           </svg>
         </figure>
         Accueil</a>
-
     </div>
+
+    <noscript>
+      <a href="http://www.abcompteur.com/">ABCompteur : compteur gratuit</a>
+    </noscript>
 
     <nav id="nav">
       <ul>
-        <li>
-          {# <form class="form-inline my-2 my-lg-0">
-                                                                      <input aria-label="Search" class="form-control mr-sm-1" placeholder="Que recherchez-vous ?" type="search">
-                                                                      <button class="btn btn-outline-info" type="button">Rechercher</button>
-                                                                    </form> #}
-        </li>
+        <li></li>
         <li>
           <a href="#">Entreprises</a>
           <ul>
-            <li>
-              <a href="#">Option 1</a>
-            </li>
-            {# <li><a href="#">Option 2</a></li>
-                                                                                      <li><a href="#">Option 3</a></li>
-                                                                                      <li><a href="#">Option 4</a></li> #}
+            <li><a href="#">Option 1</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Collectivités</a>
           <ul>
-            <li>
-              <a href="#">Option 1</a>
-            </li>
-            {# <li><a href="#">Option 2</a></li>
-                                                  <li><a href="#">Option 3</a></li>
-                                                  <li><a href="#">Option 4</a></li> #}
+            <li><a href="#">Option 1</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Demandeurs d'emplois</a>
           <ul>
-            <li>
-              <a href="#">Option 1</a>
-            </li>
-            {# <li><a href="#">Option 2</a></li>
-                                                                                      <li><a href="#">Option 3</a></li>
-                                                                                      <li><a href="#">Option 4</a></li> #}
+            <li><a href="#">Option 1</a></li>
           </ul>
         </li>
         <li>
@@ -167,6 +145,7 @@
   </body>
 
   {% block javascripts %}
+
     <script src="assets/js/logo.js"></script>
     <script src="assets/js/logo_banner.js"></script>
     <script src="assets/js/jquery.min.js"></script>
