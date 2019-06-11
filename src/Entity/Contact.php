@@ -2,56 +2,56 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
+use symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ContactRepository")
+ * @var string|null
+ * @Assert\NotBlank()
+ * @Assert\Length(min=2, max=100)
  */
 class Contact
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
-    private $id;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=100)
      */
     private $firstname;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=100)
      */
     private $lastname;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Regex(pattern="/[0-9]{10}/")
      */
     private $phone;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Email()
      */
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=10)
      */
     private $message;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getFirstname(): ?string
     {
         return $this->firstname;
     }
 
-    public function setFirstname(string $firstname): self
+    public function setFirstname(string $firstname): Contact
     {
         $this->firstname = $firstname;
 
@@ -63,7 +63,7 @@ class Contact
         return $this->lastname;
     }
 
-    public function setLastname(string $lastname): self
+    public function setLastname(string $lastname): Contact
     {
         $this->lastname = $lastname;
 
@@ -75,7 +75,7 @@ class Contact
         return $this->phone;
     }
 
-    public function setPhone(string $phone): self
+    public function setPhone(string $phone): Contact
     {
         $this->phone = $phone;
 
@@ -87,7 +87,7 @@ class Contact
         return $this->email;
     }
 
-    public function setEmail(string $email): self
+    public function setEmail(string $email): Contact
     {
         $this->email = $email;
 
@@ -99,7 +99,7 @@ class Contact
         return $this->message;
     }
 
-    public function setMessage(string $message): self
+    public function setMessage(string $message): Contact
     {
         $this->message = $message;
 

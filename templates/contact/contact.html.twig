@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block body %}
+
+  <br/>
+
+  <br/>
+
+  <br/>
+  <form>
+    <div class="form-group">
+      <div class="mt-4" id="contactForm">
+        {{ form_start(form) }}
+
+        <div class="row">
+          <div class="col">{{ form_row(form.firstname) }}</div>
+          <div class="col">{{ form_row(form.lastname) }}</div>
+        </div>
+        <div class="row">
+          <div class="col">{{ form_row(form.phone) }}</div>
+          <div class="col">{{ form_row(form.email, {'attr': {'placeholder': 'exemple@gmail.com'}}) }}</div>
+        </div>
+        <div class="col">{{ form_row(form.message) }}</div>
+
+        <br/>
+
+        <div class="form-group">
+          <button class="btn btn-primary">Envoyer</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  {{ form_end(form) }}
+{% endblock %}

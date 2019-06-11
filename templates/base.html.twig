@@ -15,8 +15,6 @@
       <link href="assets/css/css_addon/logo_banner.css" rel="stylesheet"/>
       <noscript><link href="assets/css/noscript.css" rel="stylesheet"/></noscript>
     {% endblock %}
-
-    <script src="http://www.abcompteur.com/cpt/?code=4/6/19182/7/1&ID=43497128233" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
   </head>
@@ -40,68 +38,32 @@
         Accueil</a>
     </div>
 
-    <noscript>
-      <a href="http://www.abcompteur.com/">ABCompteur : compteur gratuit</a>
-    </noscript>
-
     <nav id="nav">
       <ul>
         <li></li>
         <li>
-          <a href="#">Entreprises</a>
+          <a href="#">Entreprises/Collectivités</a>
           <ul>
-            <li><a href="#">Option 1</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Collectivités</a>
-          <ul>
-            <li><a href="#">Option 1</a></li>
+            <li><a class="nav-link" href="#">Prestations</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Demandeurs d'emplois</a>
           <ul>
-            <li><a href="#">Option 1</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="{{path('formulaire')}}">Nous contacter</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">Nos Actions</a>
-          <ul>
             <li>
-              <a class="nav-link" href="{{path('accompagnement')}}">Action & Accompagnement</a>
-            </li>
-            <li>
-              <a href="{{path('aci')}}">Ateliers & Chantiers d'Insertion</a>
-            </li>
-            <li>
-              <a href="{{path('ai')}}">Association Intermédiaire</a>
-            </li>
-            <li>
-              <a href="{{path('formation')}}">Organisme de Formation</a>
-            </li>
-            <li>
-              <a href="{{path('partenaires')}}">Nos Partenaires</a>
-            </li>
-            <li>
-              <a href="#">Sous-menu</a>
+              <a class="nav-link" href="#">Nos Actions</a>
               <ul>
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-                <li><a href="#">Option 4</a></li>
+                <li><a class="nav-link"href="{{path('accompagnement')}}">Action & Accompagnement</a></li>
+                <li><ahref="{{path('aci')}}">Ateliers & Chantiers d'Insertion</a></li>
+                <li><ahref="{{path('ai')}}">Association Intermédiaire</a></li>
+                <li><ahref="{{path('formation')}}">Organisme de Formation</a></li>
+                <li><ahref="{{path('partenaires')}}">Nos Partenaires</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li>
-          <a class="btn btn-info" href="{{path('app_register')}}">S'enregistrer</a>
-          <span>
-            <a id="dja-inscrit" href="{{path('app_login')}}">Déjà inscrit ?</a>
-          </span>
+          <a href="{{path('contact')}}">Nous contacter</a>
         </li>
       </ul>
     </nav>
